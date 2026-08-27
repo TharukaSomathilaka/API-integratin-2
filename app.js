@@ -39,3 +39,10 @@ function btnSearchOnAction() {
     console.log("Log 03");
 
 }
+
+
+navigator.geolocation.getCurrentPosition((position)=>{
+    console.log(position);
+    
+})
+console.log();
