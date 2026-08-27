@@ -19,11 +19,11 @@ const baseUrl = "http://api.weatherapi.com/v1";
 
 function btnSearchOnAction() {
     let txtUserSearchValue = document.getElementById("txtSearch").value;
-    console.log("Log 01");
+    
     
     fetch(`${baseUrl}/current.json?key=${apiKey}&q=${txtUserSearchValue}`).then(res => res.json()).then(data => {
         console.log(data);
-        console.log("Log 02");
+        
 
         document.getElementById("contentSection").innerHTML = `
                 <div>
@@ -36,7 +36,7 @@ function btnSearchOnAction() {
     `
 
     })
-    console.log("Log 03");
+    
 
 }
 
